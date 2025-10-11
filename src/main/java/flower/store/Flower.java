@@ -19,6 +19,10 @@ public class Flower {
         return color.toString();
     }
 
+    public Flower() {
+
+    }
+
     public Flower(Flower flower) {
         sepalLength = flower.sepalLength;
         color = flower.color;
@@ -26,14 +30,16 @@ public class Flower {
         flowerType = flower.flowerType;
     }
 
-    public Flower() {
-
-    }
-
     public boolean matches(Flower other) {
-        if(color == other.color && flowerType == other.flowerType && sepalLength == other.sepalLength) {
-            return true;
+        if (color != other.color) {
+            return false;
         }
-        return false;
+        if (flowerType != other.flowerType) {
+            return false;
+        }
+        if (sepalLength != other.sepalLength) {
+            return false;
+        }
+        return true;
     }
 }
