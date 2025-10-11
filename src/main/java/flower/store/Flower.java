@@ -15,19 +15,19 @@ public class Flower {
     @Getter
     private FlowerType flowerType;
 
-    public String getColor() {
-        return color.toString();
-    }
-
     public Flower() {
-
+        
     }
-
+    
     public Flower(Flower flower) {
         sepalLength = flower.sepalLength;
         color = flower.color;
         price = flower.price;
         flowerType = flower.flowerType;
+    }
+    
+    public String getColor() {
+        return color.toString();
     }
 
     public boolean matches(Flower other) {
