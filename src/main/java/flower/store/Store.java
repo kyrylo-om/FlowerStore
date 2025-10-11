@@ -3,6 +3,9 @@ package flower.store;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Store {
     private List<FlowerBucket> flowerBuckets;
 
