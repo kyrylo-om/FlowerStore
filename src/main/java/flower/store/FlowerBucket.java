@@ -23,4 +23,11 @@ public class FlowerBucket {
         }
         return price;
     }
+
+    public boolean matches(FlowerBucket other) {
+        if (flowerPacks == other.flowerPacks) {
+            return true;
+        }
+        return false;
+    }
 }
