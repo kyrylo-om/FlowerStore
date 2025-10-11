@@ -25,4 +25,15 @@ public class Flower {
         price = flower.price;
         flowerType = flower.flowerType;
     }
+
+    public Flower() {
+
+    }
+
+    public boolean matches(Flower other) {
+        if(color == other.color && flowerType == other.flowerType && sepalLength == other.sepalLength) {
+            return true;
+        }
+        return false;
+    }
 }
